@@ -8,16 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const username = document.getElementById('username').value;
     const password = passwordInput.value;
 
+    
+console.log(`Username: ${username}\nPassword: ${password}`);
+
     // Simulasi data dari database
     const mockDatabase = {
-      validUsername: '',
-      validPassword: ''
+      validUsername: 'aaron',
+      validPassword: '123456'
     };
+    
 
     if (username && password) {
       if (username === mockDatabase.validUsername && password === mockDatabase.validPassword) {
         // Data cocok, tampilkan alert sukses (simulasi)
-        alert('Login successful!');
+        alert('Login Berhasil');
       } else {
         // Data tidak cocok
         passwordAlert.textContent = 'Email atau Password Salah.';
